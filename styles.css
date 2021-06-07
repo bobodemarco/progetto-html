@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #01992C;
+  font-family: cursive;
+  font-size: 30px;
+  line-height: 2em;
+  color: white;
+}
+
+header {
+  text-align: justify;
+  color: white;
+}
+
+nav {
+  background-color: #6F67DF;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+nav li {
+  list-style-type: none;
+
+  width: auto;
+  padding-top: .5em;
+  padding-bottom: .5em;
+
+  border-top: 1px solid black;
+}
+
+nav li:nth-of-type(1),
+nav li:nth-of-type(2) {
+  border-top: none;
+}
+
+nav li:nth-of-type(2n) {
+  border-left: 1px solid black;
+}
+
+nav li.selected {
+  color:black;
+}
+
+nav a:link,
+nav a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:visited:hover,
+nav a:active,
+nav a:visited:active {
+  color: blue;
+  text-decoration: underline;
+}
+
+.button:link,
+.button:visited {
+  display: block;
+  text-decoration: none;
+
+  color: white;
+  background-color: #24229C;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+
+  margin: 1.8em auto;
+}
+
+.button:hover,
+.button:visited:hover {
+  color: white;
+  background-color: #78BCE3;
+}
+
+.button:active,
+.button:visited:active {
+  color: white;
+  background-color: #3F7CC4;
+}
+
+ul {
+   list-style-position: inside;
+}
+
+p {
+  margin: 20px;
+}
+
+.void1 {
+  height: 180px;
+  color: black;
+}
+
+.void2 {
+  height: 250px;
+  width: 50px;
+  float: left;
+}
+
+.img-box {
+  float: left;
+}
+
+.void3 {
+  height: 100px;
+}
+
+.bio {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: #FFA500;
+  width: 1200px;
+  height: 650px;
+  margin: 50px auto;
+  font-family: cursive;
+}
+
+.page {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: #FFA500;
+  margin: 150px auto;
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  font-family: cursive;
+}
+
+@media only screen and (min-width: 580px) {
+
+}
+
+@media only screen and (min-width: 750px) {
+  nav {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  nav li {
+    width: auto;
+    border-top: none;
+  }
+
+  nav li:nth-of-type(2n) {
+    border-left: none;
+  }
+ }     
